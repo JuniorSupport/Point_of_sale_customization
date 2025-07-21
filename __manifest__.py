@@ -15,8 +15,14 @@
     'application':True,
     'assets':{
         'point_of_sale._assets_pos':[
-            'point_of_sale_customization/static/src/**/*.js',
-            'point_of_sale_customization/static/src/**/*.xml'
+          #  'point_of_sale_customization/static/src/**/*.js',
+           # 'point_of_sale_customization/static/src/**/*.xml',
+
+            'point_of_sale_customization/static/src/js/pos_customization.js',
+            'point_of_sale_customization/static/src/scss/pos_customization.scss',
+
+            'point_of_sale_customization/static/src/js/customButton.js',
+            'point_of_sale_customization/static/src/xml/pos_templates.xml',
         ]
     }
     
