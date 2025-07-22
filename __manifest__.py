@@ -18,11 +18,13 @@
           #  'point_of_sale_customization/static/src/**/*.js',
            # 'point_of_sale_customization/static/src/**/*.xml',
 
-            'point_of_sale_customization/static/src/js/pos_customization.js',
-            'point_of_sale_customization/static/src/scss/pos_customization.scss',
+            'point_of_sale_customization/static/src/overrides/pos_customization.js',
+            'point_of_sale_customization/static/src/styles/pos_customization.scss',
+            'point_of_sale_customization/static/src/templates/pos_customization.xml',
+         #   'point_of_sale_customization/static/src/components/mi_popup.js',
 
-            'point_of_sale_customization/static/src/js/customButton.js',
-            'point_of_sale_customization/static/src/xml/pos_templates.xml',
+            'point_of_sale_customization/static/src/overrides/customButton.js',
+            'point_of_sale_customization/static/src/templates/pos_templates.xml',
         ]
     }
     

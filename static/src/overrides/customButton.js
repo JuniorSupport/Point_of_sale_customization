@@ -10,5 +10,6 @@ patch(ControlButtons.prototype, {
             body: _t("Hola desde OWL"),
             confirmLabel: _t("Aceptar"),
         });
+        alert("hola mundo")
     },
 });

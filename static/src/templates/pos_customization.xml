@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="pos_custom.ControlButtons"
+       t-inherit="point_of_sale.ControlButtons"
+       t-inherit-mode="extension"
+       owl="1">
+        <xpath expr="//SelectPartnerButton" position="after">
+            <button t-att-class="buttonClass" class="control-button" t-on-click="onClickMiBoton">
+                Descuento 5%
+            </button>
+        </xpath>
+    </t>
+
+<!--    <t t-name="pos_custom.SimplePopup">
+        <Dialog title="props.title || 'Popup personalizado'">
+            <input type="number" t-model="state.porcentaje" class="form-control"
+               min="0" max="100" placeholder="Ej. 15"/>
+
+            <t t-set-slot="footer">
+                <button class="btn btn-primary" t-on-click="aplicarDescuento">Aplicar</button>
+                <button class="btn btn-secondary" t-on-click="closePopup">Cancelar</button>
+            </t>
+        </Dialog>
+    </t>-->
+</templates>
