@@ -13,6 +13,7 @@ patch(ControlButtons.prototype, {
     setup(){
         super.setup();
         this.pos=usePos();
+        console.log("POS:", this.pos);
     },
 
     onClickMiBoton(){

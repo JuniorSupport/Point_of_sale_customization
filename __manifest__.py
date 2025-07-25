@@ -21,10 +21,15 @@
             'point_of_sale_customization/static/src/overrides/pos_customization.js',
             'point_of_sale_customization/static/src/styles/pos_customization.scss',
             'point_of_sale_customization/static/src/templates/pos_customization.xml',
-         #   'point_of_sale_customization/static/src/components/mi_popup.js',
 
             'point_of_sale_customization/static/src/overrides/customButton.js',
             'point_of_sale_customization/static/src/templates/pos_templates.xml',
+
+            'point_of_sale_customization/static/src/overrides/showProducts.js',
+            'point_of_sale_customization/static/src/components/popup_showProducts.js',
+            'point_of_sale_customization/static/src/templates/showProducts.xml',
+            'point_of_sale_customization/static/src/templates/popup_showProducts.xml'
+            
         ]
     }
     

@@ -4,11 +4,11 @@
        t-inherit="point_of_sale.ControlButtons" t-inherit-mode="extension">
         <xpath expr="//t[@t-if='props.showRemainingButtons']/div/OrderlineNoteButton"
                position="after">
-            <button t-att-class="buttonClass"
-                    t-on-click="onClickMessage">
+            <button t-att-class="buttonClass" t-on-click="mostrarPopup"
+                    >
                 <i class="fa fa-link me-1" role="img"
                    aria-label="Set Custom Message" title="Set Custom Message"/>
-                Boton Personalizado
+                Mostrar Productos
             </button>
         </xpath>
     </t>

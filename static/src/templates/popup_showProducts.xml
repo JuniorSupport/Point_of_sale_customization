@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="point_of_sale_customization.poup_showProducts">
+        <Dialog title.translate="Additional Information">
+            <div class="modal-body custom-form-view">
+               <form>
+                   <div class="col d-flex justify-content-between align-items-center p-3">
+                        <label class="form-label label" for="customer">Customer</label>
+                        <input t-model="state.customer" class="w-75 form-control" name="customer" t-att-disabled="true" />
+                    </div>
+                   <div class="col d-flex justify-content-between align-items-center p-3">
+                        <label class="form-label label" for="customer">Notes</label>
+                        <input  t-model="state.notes" type="text" class="w-75 form-control" name="notes" t-att-disabled="true" />
+                    </div>
+                    
+                    <label class="form-label label" for="product">Products Comprados Anteriormente</label>
+                    <div class="col d-flex justify-content-between align-items-center p-3">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Numero de Recibo</th>
+                                    <th scope="col">Ref. de la Orden</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="state.product" t-as="order" t-key="order.id">
+                                    <td t-esc="order.pos_reference"></td>
+                                    <td t-esc="order.name"></td>
+                                    <td t-esc="order.amount_total"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <t t-set-slot="footer">
+                <button class="btn btn-primary o-default-button" t-on-click="confirm">Ok</button>
+            </t>
+        </Dialog>
+    </t>
+</templates>
